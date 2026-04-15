@@ -1,0 +1,17 @@
+torch
+transformers>=4.44.2
+bitsandbytes
+accelerate==0.33.0
+sentencepiece
+protobuf
+sentence-transformers==3.0.1
+faiss-cpu
+rank-bm25
+pypdf
+rouge-score
+nltk
+scikit-learn
+numpy
+matplotlib
+langdetect
+spaces
