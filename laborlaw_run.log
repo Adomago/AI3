@@ -1,0 +1,654 @@
+Created 538 substantive chunks
+Average chunk length: 720 characters
+Min: 112, Max: 1964
+
+Sample chunk (chunk #5):
+Article 302 of 
+P.D. No. 442, As Amended.” Section 3 of the said law contains a Renumbering Clause: 
+“For purposes of uniformity, the numerical designation of Title II (Retirement), Book 
+Six of Presidential Decree No. 442, as...
+Article headers cleaned.
+Loading embedding model: BAAI/bge-m3
+Creating dense embeddings for all chunks...
+Building FAISS index (IndexFlatIP = cosine similarity)...
+FAISS index ready. Shape: (538, 1024) | Vectors: 538
+Building BM25 index...
+BM25 index ready.
+Loading cross-encoder reranker...
+Reranker ready.
+
+✓ Retrieval infrastructure shared and ready for all models.
+✓ Greeting detection loaded.
+  Test: is_greeting('Hi!')       → True
+  Test: is_greeting('hello')     → True
+  Test: is_greeting('thanks')    → True
+  Test: is_greeting('What is overtime pay?') → False
+Test set loaded: 30 queries
+  In-scope: 27
+  Out-of-scope: 3
+✓ Metric functions loaded.
+  Metrics: Recall@5, Precision@5, Faithfulness, Semantic Similarity,
+           Answer Relevancy, Citation Accuracy, Latency
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/138.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m138.3/138.3 kB[0m [31m6.4 MB/s[0m eta [36m0:00:00[0m
+[?25h✅ LLM-as-a-Judge (Groq/Mistral) ready.
+✓ Shared helpers loaded (format_context, filter_hallucination, run_evaluation, export_results).
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.3.3: Fast Qwen2 patching. Transformers: 4.56.2.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.563 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 7.5. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.34. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+unsloth/qwen2.5-7b-instruct-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Chat template loaded: True
+Stop token ids to use: [151645]
+Model loaded successfully.
+  Total parameters: 4,352,972,288
+  Memory footprint: 5191.14 MB
+  Quantization: 4-bit (bitsandbytes)
+  Max sequence length: 4096
+Running evaluation for Qwen2.5-7B on 30 queries...
+[1/30] What is night shift differential?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.89, lat=10.98s)
+[2/30] What are the normal hours of work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.93, lat=5.85s)
+[3/30] When is overtime work allowed?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=7.93s)
+[4/30] What is the rule on holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.91, lat=7.04s)
+[5/30] What are the just causes for termination by employer?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.93, lat=7.33s)
+[6/30] What is service incentive leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.88, lat=8.08s)
+[7/30] What is the rule on rest days?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=13.67s)
+[8/30] What is the retirement age?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.76, lat=8.63s)
+[9/30] What is 13th month pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=7.45s)
+[10/30] Can women work at night?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.77, lat=13.92s)
+[11/30] What is separation pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=12.41s)
+[12/30] What is the rule on meal periods?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.92, lat=3.31s)
+[13/30] What is maternity leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.76, lat=10.34s)
+[14/30] Can an employer reduce wages?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.73, lat=9.07s)
+[15/30] What is the rule on employment of minors?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=10.29s)
+[16/30] What is a labor organization?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=8.45s)
+[17/30] What is unfair labor practice by employers?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=11.94s)
+[18/30] What is the rule on strikes?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.80, lat=11.08s)
+[19/30] What is premium pay for rest day work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.90, lat=7.70s)
+[20/30] What are authorized causes for termination?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.69, lat=11.31s)
+[21/30] What is the minimum wage in the United States?... done (OOS, lat=16.12s)
+[22/30] How do I file my income tax return?... done (OOS, lat=10.09s)
+[23/30] What is the meaning of life?... done (OOS, lat=12.28s)
+[24/30] Ano ang overtime pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.78, lat=11.07s)
+[25/30] Ilang oras ang normal na trabaho sa isang araw?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.58, lat=7.51s)
+[26/30] What is the difference between rest day pay and holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=13.22s)
+[27/30] Can a pregnant woman be terminated?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=7.73s)
+[28/30] What are the employee rights during closure of business?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.86, lat=9.23s)
+[29/30] What is the cooling off period before a strike?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=5.36s)
+[30/30] What are the prohibitions on wage deductions?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=5.88s)
+
+✓ Evaluation complete for Qwen2.5-7B.
+✓ Exported qwen25_7b_results.json
+{
+  "model": "Qwen2.5-7B",
+  "num_queries": 30,
+  "in_scope_count": 27,
+  "avg_recall_at_4": 0.9907407407407407,
+  "avg_precision_at_4": 0.2925925925925926,
+  "avg_faithfulness": 0.7482596188783646,
+  "avg_semantic_sim": 0.8113834526803758,
+  "avg_answer_relevancy": 0.7033385965559218,
+  "avg_citation_acc": 0.8796296296296297,
+  "avg_llm_judge": 0.714219531416893,
+  "avg_total_latency": 9.508745590845743
+}
+GPU memory freed. Current allocation: 2305.1 MB
+==((====))==  Unsloth 2026.3.3: Fast Llama patching. Transformers: 4.56.2.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.563 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 7.5. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.34. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Chat template loaded: True
+Stop token ids: [128009]
+Model loaded successfully.
+  Total parameters: 4,540,600,320
+  Memory footprint: 5332.51 MB
+  Quantization: 4-bit (bitsandbytes)
+  Max sequence length: 4096
+Running evaluation for LLaMA-3.1-8B on 30 queries...
+[1/30] What is night shift differential?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.89, lat=6.59s)
+[2/30] What are the normal hours of work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.83, lat=8.55s)
+[3/30] When is overtime work allowed?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.77, lat=14.31s)
+[4/30] What is the rule on holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.95, lat=11.44s)
+[5/30] What are the just causes for termination by employer?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.88, lat=9.55s)
+[6/30] What is service incentive leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.93, lat=4.10s)
+[7/30] What is the rule on rest days?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.88, lat=10.76s)
+[8/30] What is the retirement age?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.74, lat=7.84s)
+[9/30] What is 13th month pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=10.50s)
+[10/30] Can women work at night?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=10.61s)
+[11/30] What is separation pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.82, lat=18.42s)
+[12/30] What is the rule on meal periods?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.96, lat=4.05s)
+[13/30] What is maternity leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.72, lat=5.45s)
+[14/30] Can an employer reduce wages?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.69, lat=7.79s)
+[15/30] What is the rule on employment of minors?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=8.16s)
+[16/30] What is a labor organization?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.76, lat=6.96s)
+[17/30] What is unfair labor practice by employers?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.80, lat=16.29s)
+[18/30] What is the rule on strikes?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.82, lat=9.33s)
+[19/30] What is premium pay for rest day work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.84, lat=8.06s)
+[20/30] What are authorized causes for termination?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.70, lat=13.90s)
+[21/30] What is the minimum wage in the United States?... done (OOS, lat=13.13s)
+[22/30] How do I file my income tax return?... done (OOS, lat=3.79s)
+[23/30] What is the meaning of life?... done (OOS, lat=24.00s)
+[24/30] Ano ang overtime pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.80, lat=7.32s)
+[25/30] Ilang oras ang normal na trabaho sa isang araw?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=4.32s)
+[26/30] What is the difference between rest day pay and holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=13.16s)
+[27/30] Can a pregnant woman be terminated?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.84, lat=8.01s)
+[28/30] What are the employee rights during closure of business?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=9.18s)
+[29/30] What is the cooling off period before a strike?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.78, lat=4.54s)
+[30/30] What are the prohibitions on wage deductions?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.78, lat=13.07s)
+
+✓ Evaluation complete for LLaMA-3.1-8B.
+✓ Exported llama_31_8b_results.json
+{
+  "model": "LLaMA-3.1-8B",
+  "num_queries": 30,
+  "in_scope_count": 27,
+  "avg_recall_at_4": 0.9907407407407407,
+  "avg_precision_at_4": 0.2925925925925926,
+  "avg_faithfulness": 0.7401282240947088,
+  "avg_semantic_sim": 0.8209707140922546,
+  "avg_answer_relevancy": 0.7091728956611069,
+  "avg_citation_acc": 0.8518518518518519,
+  "avg_llm_judge": 0.6926666662096977,
+  "avg_total_latency": 9.772085261344909
+}
+GPU memory freed. Current allocation: 2305.1 MB
+==((====))==  Unsloth 2026.3.3: Fast Gemma2 patching. Transformers: 4.56.2.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.563 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 7.5. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.34. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Chat template loaded: True
+Model loaded successfully.
+  Total parameters: 5,079,907,840
+  Memory footprint: 5720.16 MB
+  Quantization: 4-bit (bitsandbytes)
+  Max sequence length: 4096
+Running evaluation for Gemma-2-9B on 30 queries...
+[1/30] What is night shift differential?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.92, lat=27.52s)
+[2/30] What are the normal hours of work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=5.94s)
+[3/30] When is overtime work allowed?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.75, lat=12.50s)
+[4/30] What is the rule on holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.97, lat=9.11s)
+[5/30] What are the just causes for termination by employer?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.97, lat=8.72s)
+[6/30] What is service incentive leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.86, lat=7.86s)
+[7/30] What is the rule on rest days?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.92, lat=12.07s)
+[8/30] What is the retirement age?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=10.80s)
+[9/30] What is 13th month pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.73, lat=7.75s)
+[10/30] Can women work at night?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.76, lat=8.30s)
+[11/30] What is separation pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=11.76s)
+[12/30] What is the rule on meal periods?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.94, lat=6.43s)
+[13/30] What is maternity leave?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.80, lat=9.78s)
+[14/30] Can an employer reduce wages?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.74, lat=7.97s)
+[15/30] What is the rule on employment of minors?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.91, lat=17.45s)
+[16/30] What is a labor organization?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=7.84s)
+[17/30] What is unfair labor practice by employers?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.85, lat=11.32s)
+[18/30] What is the rule on strikes?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.82, lat=25.03s)
+[19/30] What is premium pay for rest day work?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.91, lat=9.13s)
+[20/30] What are authorized causes for termination?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.79, lat=8.72s)
+[21/30] What is the minimum wage in the United States?... done (OOS, lat=4.16s)
+[22/30] How do I file my income tax return?... done (OOS, lat=4.47s)
+[23/30] What is the meaning of life?... done (OOS, lat=4.88s)
+[24/30] Ano ang overtime pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.81, lat=15.58s)
+[25/30] Ilang oras ang normal na trabaho sa isang araw?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.95, lat=7.43s)
+[26/30] What is the difference between rest day pay and holiday pay?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.91, lat=11.46s)
+[27/30] Can a pregnant woman be terminated?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.94, lat=7.79s)
+[28/30] What are the employee rights during closure of business?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.87, lat=12.13s)
+[29/30] What is the cooling off period before a strike?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.80, lat=10.69s)
+[30/30] What are the prohibitions on wage deductions?... [Judge fallback] Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+done (sim=0.91, lat=13.40s)
+
+✓ Evaluation complete for Gemma-2-9B.
+✓ Exported gemma_2_9b_results.json
+{
+  "model": "Gemma-2-9B",
+  "num_queries": 30,
+  "in_scope_count": 27,
+  "avg_recall_at_4": 0.9907407407407407,
+  "avg_precision_at_4": 0.2925925925925926,
+  "avg_faithfulness": 0.7460656573375066,
+  "avg_semantic_sim": 0.8592899154733729,
+  "avg_answer_relevancy": 0.6968815679903384,
+  "avg_citation_acc": 0.8981481481481481,
+  "avg_llm_judge": 0.7333406294385593,
+  "avg_total_latency": 10.5994766553243
+}
+Gemma-2 weights retained for API deployment.
+Current GPU allocation: 8786.7 MB
+======================================================================
+  CROSS-MODEL COMPARISON SUMMARY
+======================================================================
+Metric                      Qwen2.5-7B    LLaMA-3.1-8B      Gemma-2-9B
+----------------------------------------------------------------------
+Recall@5                        0.9907          0.9907          0.9907
+Precision@5                     0.2926          0.2926          0.2926
+Faithfulness                    0.7483          0.7401          0.7461
+Semantic Sim                    0.8114          0.8210          0.8593
+Answer Relevancy                0.7033          0.7092          0.6969
+Citation Accuracy               0.8796          0.8519          0.8981
+LLM-as-a-Judge                  0.7142          0.6927          0.7333
+Avg Latency (s)                 9.5087          9.7721         10.5995
+======================================================================
+Saved: comparison_grouped_bar.png
+Saved: comparison_radar.png
+Saved: comparison_latency.png
+Saved: comparison_heatmap.png
+Saved: comparison_judge_scatter.png
+✓ Exported: all_models_combined_results.json
+  Contains results for: ['Qwen2.5-7B', 'LLaMA-3.1-8B', 'Gemma-2-9B']
+
+================================================================================
+QUESTION: Hi!
+================================================================================
+
+[GREETING DETECTED — no retrieval]
+Hello! I'm Lex, your Philippine Labor Law assistant. Feel free to ask me any questions about labor rights, employment policies, wages, working hours, leaves, termination, or any workplace concerns under the Philippine Labor Code (PD 442). How can I help you today?
+
+================================================================================
+QUESTION: Hello
+================================================================================
+
+[GREETING DETECTED — no retrieval]
+Hello! I'm Lex, your Philippine Labor Law assistant. Feel free to ask me any questions about labor rights, employment policies, wages, working hours, leaves, termination, or any workplace concerns under the Philippine Labor Code (PD 442). How can I help you today?
+
+================================================================================
+QUESTION: Ano ang overtime pay?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.776, lat=11.07s)
+Ang pagpapabayaran ng extra para sa panahon na lumalaba maaaring sumingi hanggang 25% bilang adicional kung ang trabaho ay nagsimula sa ika-ito ng hapon. Kung ang trabaho ay nag-iwan ng loob ng ika-ito ng araw o siyam nga araw bago maghinto, mas mataas ang adicinal bilang 30%. Ibig sabihin, hindi mahatid ilagay ang undertime niya upang makakausig sa overtime pay niya sa ibang araw. Under Article 87 and 88.
+
+[LLaMA-3.1-8B] (sem_sim=0.800, lat=7.32s)
+Ang pagkakasasa sa gawain ay binayadhan ng adisyal na suweldo pati na rin ng tatlumpu't liming porsiyento nito kung magtatrabaho pa sa labas ng walong oras alinman araw o buwanan. Ang bayarin dyan ay batay sa Artikulo 87.
+
+[Gemma-2-9B] (sem_sim=0.805, lat=15.58s)
+Sa ilalim ng Artikulo 87, kung magtatrabaho ka nang lampas sa walong oras kada araw, dapat kang bayaran ng dagdag na kompensasyon na katumbas ng iyong regular na sweldo kasama pa roon ang hindi bababa sa dalawampung limang porsiyento (25%).  Kung nagtrabaho ka naman noong kapaskuhan o araw ng pahinga, kailangan silang ibayad mo ng karagdagang halaga na katumbas ng unang walo oras sa isang pista opisyal o araw ng pagpahingasa pangatlong porsiyentompo rito.
+
+
+================================================================================
+QUESTION: I am abused at my workplace like physically. What article is that related?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: How do I compute my overtime pay plus holiday?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: Can an employer reduce wages?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.729, lat=9.07s)
+An employer may not unilaterally reduce wages without proper authorization or justification. According to Art. 118, it would constitute retaliatory measures if done after an employee files a complaint or testifies in related proceedings. Additionally, reducing wages indirectly through actions like limiting their disposal per Art. 112 is prohibited. Therefore, wage reductions must adhere strictly to lawful provisions and agreements between parties.
+
+Art. 118 and Art. 112 provide protections regarding unauthorized reduction of wages.
+
+[LLaMA-3.1-8B] (sem_sim=0.687, lat=7.79s)
+No, it would be unlawful for an employer to reduce wages without just cause. However, there may be instances like closure of establishments or reduction of personnel wherein employers can provide alternative forms of payment according to Art. 299 does mention termination however I am assuming you meant wage reductions so referring back to source ART. 118 states retaliatory measures including refusal to pay full wages thus implying they must remain intact unless justified.
+
+[Gemma-2-9B] (sem_sim=0.740, lat=7.97s)
+Under Article 118, it shall be unlawful for an employer to...refuse to pay or reduce the wages ...or discriminate against any employee who has filed any complaint or instituted any proceeding under this Title....
+
+
+================================================================================
+QUESTION: What is the cooling off period before a strike?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.750, lat=5.36s)
+The cooling-off period before a strike is 15 days according to Articles 278(d)(f), unless the termination of union officers constitutes union busting, then the 15-day cooling-off period does not apply. Under those circumstances, the union can act immediately.
+
+[LLaMA-3.1-8B] (sem_sim=0.784, lat=4.54s)
+The cooling-off period before a strike is 15 days according to Art. 278(d), except when the existence of the union is threatened due to the dismissal of union officials, then immediate action can be taken.
+
+[Gemma-2-9B] (sem_sim=0.797, lat=10.69s)
+Under Article 278,  "The notice of strike...must include information regarding the proposed date of commencement of the strike..."   
+
+It further states "...in the absence of a duly certified or recognized bargaining agent, the notice of strike may be filed by any legitimate labor organization in behalf of its members".
+
+However, no specific mention of a cooling-off period duration is given within these excerpts.
+
+
+================================================================================
+QUESTION: What is the minimum wage at Metro Manila?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: When is overtime work allowed?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.748, lat=7.93s)
+Overtime work can be allowed under certain conditions specified in Articles 89(a)-(d):
+
+- During declared emergencies like wars, natural disasters, accidents, fires, etc.
+- To prevent significant losses or damages to employers' assets or properties.
+- For urgent machine maintenance preventing major financial harm.
+- Necessary actions against perishing products to save them from ruin. 
+
+Additionally, completing tasks initiated prior to the standard shift might also warrant overtime pay according to point (e) of Art. 89.
+
+[LLaMA-3.1-8B] (sem_sim=0.767, lat=14.31s)
+Overtime work is allowed in several situations:
+
+* During times of war or declared emergencies (Article 89(a));
+* To prevent loss of life or property or ensure public safety due to accidents, fires, floods, etc. (Article 89(b));
+* For urgent machine maintenance to avoid significant losses (Article 89(c));
+* To protect against loss or damage to perishable items (Article 89(d)); and
+* When completing tasks begun within the initial 8 hours would hinder business operations significantly (Article 89(e)). 
+
+Additionally, employees can also work extra hours after being trained through programs like those mentioned in Articles 83-85, however these articles were omitted here so I am unable to provide further information about them. However they do state that certain conditions must be met prior to allowing extended shifts.
+
+[Gemma-2-9B] (sem_sim=0.751, lat=12.50s)
+Overtime work is allowed under the following circumstances according to Article 89:  when the country is at war or a national or local emergency has been declared; when preventing loss of life or property is necessary due to an accident, natural disaster, etc.; when urgent repairs need to be done to machinery or equipment; when preserving perishable goods requires immediate action; or when completing ongoing work past the eighth hour prevents significant harm to the employer’s business.
+
+
+================================================================================
+QUESTION: What is a labor organization?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.793, lat=8.45s)
+A labor organization refers to any union or association of employees which exists in whole or in part for the purpose of collective bargaining or of dealing with employers regarding terms and conditions of employment. Under Articles 219(h), it also specifically mentions that a legitimate labor organization must be duly registered with the Department of Labor and Employment and can include branches or locals thereof. 
+
+Article numbers cited: ART. 219(h); ART. 250.
+
+[LLaMA-3.1-8B] (sem_sim=0.760, lat=6.96s)
+A labor organization refers to any union or association of employees that exists either wholly or partially for the purpose of collective bargaining or of dealing with employers regarding terms and conditions of employment. This definition can also refer to any branch or local of a legitimate labor organization duly registered with the Department of Labor and Employment. 
+
+(See Articles g & h of Source 2.)
+
+[Gemma-2-9B] (sem_sim=0.854, lat=7.84s)
+Article 219 defines a “labor organization” as any union or association of employees which exists in whole or in part for the purpose of collective bargaining or of dealing with employers concerning terms and conditions of employment.
+
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.5/9.1 MB[0m [31m104.6 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m9.1/9.1 MB[0m [31m163.7 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.1/9.1 MB[0m [31m99.8 MB/s[0m eta [36m0:00:00[0m
+[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/6.9 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m6.9/6.9 MB[0m [31m275.7 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.9/6.9 MB[0m [31m131.1 MB/s[0m eta [36m0:00:00[0m
+[?25h✅ All model functions found.
+⏳ FastAPI starting...
+✅ FastAPI: {'status': 'ok', 'gpu': True}
+⏳ Streamlit starting...
+Downloading ngrok ...Downloading ngrok: 0%Downloading ngrok: 1%Downloading ngrok: 2%Downloading ngrok: 3%Downloading ngrok: 4%Downloading ngrok: 5%Downloading ngrok: 6%Downloading ngrok: 7%Downloading ngrok: 8%Downloading ngrok: 9%Downloading ngrok: 10%Downloading ngrok: 11%Downloading ngrok: 12%Downloading ngrok: 13%Downloading ngrok: 14%Downloading ngrok: 15%Downloading ngrok: 16%Downloading ngrok: 17%Downloading ngrok: 18%Downloading ngrok: 19%Downloading ngrok: 20%Downloading ngrok: 21%Downloading ngrok: 22%Downloading ngrok: 23%Downloading ngrok: 24%Downloading ngrok: 25%Downloading ngrok: 26%Downloading ngrok: 27%Downloading ngrok: 28%Downloading ngrok: 29%Downloading ngrok: 30%Downloading ngrok: 31%Downloading ngrok: 32%Downloading ngrok: 33%Downloading ngrok: 34%Downloading ngrok: 35%Downloading ngrok: 36%Downloading ngrok: 37%Downloading ngrok: 38%Downloading ngrok: 39%Downloading ngrok: 40%Downloading ngrok: 41%Downloading ngrok: 42%Downloading ngrok: 43%Downloading ngrok: 44%Downloading ngrok: 45%Downloading ngrok: 46%Downloading ngrok: 47%Downloading ngrok: 48%Downloading ngrok: 49%Downloading ngrok: 50%Downloading ngrok: 51%Downloading ngrok: 52%Downloading ngrok: 53%Downloading ngrok: 54%Downloading ngrok: 55%Downloading ngrok: 56%Downloading ngrok: 57%Downloading ngrok: 58%Downloading ngrok: 59%Downloading ngrok: 60%Downloading ngrok: 61%Downloading ngrok: 62%Downloading ngrok: 63%Downloading ngrok: 64%Downloading ngrok: 65%Downloading ngrok: 66%Downloading ngrok: 67%Downloading ngrok: 68%Downloading ngrok: 69%Downloading ngrok: 70%Downloading ngrok: 71%Downloading ngrok: 72%Downloading ngrok: 73%Downloading ngrok: 74%Downloading ngrok: 75%Downloading ngrok: 76%Downloading ngrok: 77%Downloading ngrok: 78%Downloading ngrok: 79%Downloading ngrok: 80%Downloading ngrok: 81%Downloading ngrok: 82%Downloading ngrok: 83%Downloading ngrok: 84%Downloading ngrok: 85%Downloading ngrok: 86%Downloading ngrok: 87%Downloading ngrok: 88%Downloading ngrok: 89%Downloading ngrok: 90%Downloading ngrok: 91%Downloading ngrok: 92%Downloading ngrok: 93%Downloading ngrok: 94%Downloading ngrok: 95%Downloading ngrok: 96%Downloading ngrok: 97%Downloading ngrok: 98%Downloading ngrok: 99%Downloading ngrok: 100%                                                                                                    Installing ngrok ...                                                                                                     
+============================================================
+  ✅  LaborLex PH is live!
+============================================================
+  🌐  OPEN THIS  →  https://radiologically-shipless-zariyah.ngrok-free.dev
+  ⚙️   BACKEND   →  https://radiologically-shipless-zariyah.ngrok-free.dev
+============================================================
+  1. Click OPEN THIS to open the Streamlit UI
+  2. In the sidebar, paste the BACKEND URL
+  3. The two URLs must be DIFFERENT — if same, re-run
+============================================================
+  ⚠️  Keep this cell running. Do not interrupt.
+
+================================================================================
+QUESTION: Hi!
+================================================================================
+
+[GREETING DETECTED — no retrieval]
+Hello! I'm Lex, your Philippine Labor Law assistant. Feel free to ask me any questions about labor rights, employment policies, wages, working hours, leaves, termination, or any workplace concerns under the Philippine Labor Code (PD 442). How can I help you today?
+
+================================================================================
+QUESTION: Hello
+================================================================================
+
+[GREETING DETECTED — no retrieval]
+Hello! I'm Lex, your Philippine Labor Law assistant. Feel free to ask me any questions about labor rights, employment policies, wages, working hours, leaves, termination, or any workplace concerns under the Philippine Labor Code (PD 442). How can I help you today?
+
+================================================================================
+QUESTION: Ano ang overtime pay?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.776, lat=11.07s)
+Ang pagpapabayaran ng extra para sa panahon na lumalaba maaaring sumingi hanggang 25% bilang adicional kung ang trabaho ay nagsimula sa ika-ito ng hapon. Kung ang trabaho ay nag-iwan ng loob ng ika-ito ng araw o siyam nga araw bago maghinto, mas mataas ang adicinal bilang 30%. Ibig sabihin, hindi mahatid ilagay ang undertime niya upang makakausig sa overtime pay niya sa ibang araw. Under Article 87 and 88.
+
+[LLaMA-3.1-8B] (sem_sim=0.800, lat=7.32s)
+Ang pagkakasasa sa gawain ay binayadhan ng adisyal na suweldo pati na rin ng tatlumpu't liming porsiyento nito kung magtatrabaho pa sa labas ng walong oras alinman araw o buwanan. Ang bayarin dyan ay batay sa Artikulo 87.
+
+[Gemma-2-9B] (sem_sim=0.805, lat=15.58s)
+Sa ilalim ng Artikulo 87, kung magtatrabaho ka nang lampas sa walong oras kada araw, dapat kang bayaran ng dagdag na kompensasyon na katumbas ng iyong regular na sweldo kasama pa roon ang hindi bababa sa dalawampung limang porsiyento (25%).  Kung nagtrabaho ka naman noong kapaskuhan o araw ng pahinga, kailangan silang ibayad mo ng karagdagang halaga na katumbas ng unang walo oras sa isang pista opisyal o araw ng pagpahingasa pangatlong porsiyentompo rito.
+
+
+================================================================================
+QUESTION: I am abused at my workplace like physically. What article is that related?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: How do I compute my overtime pay plus holiday?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: Can an employer reduce wages?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.729, lat=9.07s)
+An employer may not unilaterally reduce wages without proper authorization or justification. According to Art. 118, it would constitute retaliatory measures if done after an employee files a complaint or testifies in related proceedings. Additionally, reducing wages indirectly through actions like limiting their disposal per Art. 112 is prohibited. Therefore, wage reductions must adhere strictly to lawful provisions and agreements between parties.
+
+Art. 118 and Art. 112 provide protections regarding unauthorized reduction of wages.
+
+[LLaMA-3.1-8B] (sem_sim=0.687, lat=7.79s)
+No, it would be unlawful for an employer to reduce wages without just cause. However, there may be instances like closure of establishments or reduction of personnel wherein employers can provide alternative forms of payment according to Art. 299 does mention termination however I am assuming you meant wage reductions so referring back to source ART. 118 states retaliatory measures including refusal to pay full wages thus implying they must remain intact unless justified.
+
+[Gemma-2-9B] (sem_sim=0.740, lat=7.97s)
+Under Article 118, it shall be unlawful for an employer to...refuse to pay or reduce the wages ...or discriminate against any employee who has filed any complaint or instituted any proceeding under this Title....
+
+
+================================================================================
+QUESTION: What is the cooling off period before a strike?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.750, lat=5.36s)
+The cooling-off period before a strike is 15 days according to Articles 278(d)(f), unless the termination of union officers constitutes union busting, then the 15-day cooling-off period does not apply. Under those circumstances, the union can act immediately.
+
+[LLaMA-3.1-8B] (sem_sim=0.784, lat=4.54s)
+The cooling-off period before a strike is 15 days according to Art. 278(d), except when the existence of the union is threatened due to the dismissal of union officials, then immediate action can be taken.
+
+[Gemma-2-9B] (sem_sim=0.797, lat=10.69s)
+Under Article 278,  "The notice of strike...must include information regarding the proposed date of commencement of the strike..."   
+
+It further states "...in the absence of a duly certified or recognized bargaining agent, the notice of strike may be filed by any legitimate labor organization in behalf of its members".
+
+However, no specific mention of a cooling-off period duration is given within these excerpts.
+
+
+================================================================================
+QUESTION: What is the minimum wage at Metro Manila?
+================================================================================
+
+[Qwen2.5-7B] — not in evaluation set
+
+[LLaMA-3.1-8B] — not in evaluation set
+
+[Gemma-2-9B] — not in evaluation set
+
+
+================================================================================
+QUESTION: When is overtime work allowed?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.748, lat=7.93s)
+Overtime work can be allowed under certain conditions specified in Articles 89(a)-(d):
+
+- During declared emergencies like wars, natural disasters, accidents, fires, etc.
+- To prevent significant losses or damages to employers' assets or properties.
+- For urgent machine maintenance preventing major financial harm.
+- Necessary actions against perishing products to save them from ruin. 
+
+Additionally, completing tasks initiated prior to the standard shift might also warrant overtime pay according to point (e) of Art. 89.
+
+[LLaMA-3.1-8B] (sem_sim=0.767, lat=14.31s)
+Overtime work is allowed in several situations:
+
+* During times of war or declared emergencies (Article 89(a));
+* To prevent loss of life or property or ensure public safety due to accidents, fires, floods, etc. (Article 89(b));
+* For urgent machine maintenance to avoid significant losses (Article 89(c));
+* To protect against loss or damage to perishable items (Article 89(d)); and
+* When completing tasks begun within the initial 8 hours would hinder business operations significantly (Article 89(e)). 
+
+Additionally, employees can also work extra hours after being trained through programs like those mentioned in Articles 83-85, however these articles were omitted here so I am unable to provide further information about them. However they do state that certain conditions must be met prior to allowing extended shifts.
+
+[Gemma-2-9B] (sem_sim=0.751, lat=12.50s)
+Overtime work is allowed under the following circumstances according to Article 89:  when the country is at war or a national or local emergency has been declared; when preventing loss of life or property is necessary due to an accident, natural disaster, etc.; when urgent repairs need to be done to machinery or equipment; when preserving perishable goods requires immediate action; or when completing ongoing work past the eighth hour prevents significant harm to the employer’s business.
+
+
+================================================================================
+QUESTION: What is a labor organization?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.793, lat=8.45s)
+A labor organization refers to any union or association of employees which exists in whole or in part for the purpose of collective bargaining or of dealing with employers regarding terms and conditions of employment. Under Articles 219(h), it also specifically mentions that a legitimate labor organization must be duly registered with the Department of Labor and Employment and can include branches or locals thereof. 
+
+Article numbers cited: ART. 219(h); ART. 250.
+
+[LLaMA-3.1-8B] (sem_sim=0.760, lat=6.96s)
+A labor organization refers to any union or association of employees that exists either wholly or partially for the purpose of collective bargaining or of dealing with employers regarding terms and conditions of employment. This definition can also refer to any branch or local of a legitimate labor organization duly registered with the Department of Labor and Employment. 
+
+(See Articles g & h of Source 2.)
+
+[Gemma-2-9B] (sem_sim=0.854, lat=7.84s)
+Article 219 defines a “labor organization” as any union or association of employees which exists in whole or in part for the purpose of collective bargaining or of dealing with employers concerning terms and conditions of employment.
+
+
+================================================================================
+QUESTION: What is maternity leave?
+================================================================================
+
+[Qwen2.5-7B] (sem_sim=0.760, lat=10.34s)
+Maternity leave entitles female workers who have served at least six months during the past year to receive unpaid leave extending up to eight weeks based on certain conditions:
+
+- Two weeks before the expected date of delivery plus four weeks post-delivery or following an abortion, both fully compensated according to usual earnings ("Art. 131").
+
+- Extensions due to health issues related to pregnancy, childbirth, etc., might occur depending on available leave credits ("Art. 131(b)").
+
+- Only the first four deliveries qualify for payment per woman since the implementation of PD 442 ("Art. 131(c)").
+
+[LLaMA-3.1-8B] (sem_sim=0.716, lat=5.45s)
+Maternity leave refers to time off granted to female workers before and after childbirth, typically lasting around eight weeks based on Art. 131(b): "The maternity leave shall be extended without pay on account of illness medically certified to arise out of the pregnancy..."
+
+[Gemma-2-9B] (sem_sim=0.796, lat=9.78s)
+Maternity leave provides eligible female employees time off before and after childbirth.   Under Article 131, every employer must grant a minimum of six weeks of paid maternity leave followed by up to four additional unpaid weeks depending on circumstances like complications during birth. This code outlines requirements for eligibility, duration, and payment structure.
+
+PyTorch version: 2.10.0+cu128
+CUDA available: True
+GPU: Tesla T4
+GPU Memory: 14.6 GB
+PyTorch version: 2.10.0+cu128
+CUDA available: True
+GPU: Tesla T4
+GPU Memory: 14.6 GB
+Upload the Philippine Labor Code PDF:
+Upload the Philippine Labor Code PDF:
